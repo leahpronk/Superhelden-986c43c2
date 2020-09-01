@@ -31,7 +31,7 @@ function processResponse(response) {
             let info = document.createTextNode(member[key]);
             newCell.appendChild(info);
         }
-    };
+    }
 
 }
 sendRequest();
