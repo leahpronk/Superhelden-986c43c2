@@ -1,4 +1,3 @@
-  
 const requestUrl = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
 
 function requestJSON(url) {
@@ -6,7 +5,7 @@ function requestJSON(url) {
     request.open('GET', url);
     request.responseType = 'json';
     request.send();
-    request.onload = function () {
+    request.onload = function (json) {
         let response = request.response;
         processResponse(response);
     }
@@ -17,11 +16,11 @@ function sendRequest() {
 }
 
 function processResponse(response) {
-    document.querySelector("#squadName").innerText = response.squadName;
-    document.querySelector("#homeTown").innerText = response.homeTown;
-    document.querySelector("#formed").innerText = response.formed;
-    document.querySelector("#secretBase").innerText = response.secretBase;
-    document.querySelector("#active").innerText = response.active;
+    document.querySelector('#squadName').innerText = response.squadName;
+    document.querySelector('#homeTown').innerText = response.homeTown;
+    document.querySelector('#formed').innerText = response.formed;
+    document.querySelector('#secretBase').innerText = response.secretBase;
+    document.querySelector('#active').innerText = response.active;
 
     let table = document.getElementById('member-table');
 
