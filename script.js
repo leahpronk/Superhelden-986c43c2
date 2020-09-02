@@ -15,6 +15,7 @@ function sendRequest() {
 }
 
 function processResponse(response) {
+    // hi
     document.querySelector('#squadName').innerText = response.squadName;
     document.querySelector('#homeTown').innerText = response.homeTown;
     document.querySelector('#formed').innerText = response.formed;
