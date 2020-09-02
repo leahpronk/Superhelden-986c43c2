@@ -1,5 +1,4 @@
 const requestUrl = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
-
 function requestJSON(url) {
     let request = new XMLHttpRequest();
     request.open('GET', url);
